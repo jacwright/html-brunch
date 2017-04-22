@@ -10,4 +10,4 @@ module.exports = class HTMLCompiler
 
   compile: (data, path, callback) ->
     d = JSON.stringify(data)
-    callback null, "module.exports = function() { return #{d};};"
+    callback null, "module.exports = #{d};"
